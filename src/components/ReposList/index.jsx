@@ -36,12 +36,12 @@ const ReposList = ({ nomeUsuario }) => {
                                 <div>
                                     <a className={styles.itemLink} href={repositorio.html_url} target="_blank">Acessar repositório</a>
                                 </div>
-                                <div className={styles.itemDate}>
+                                {/* <div className={styles.itemDate}>
                                     <b>Criado:</b> 
                                     <time>
                                         {new Date(repositorio.created_at).toLocaleString("pt-br", {timezone: "UTC"})}
                                     </time>
-                                </div>
+                                </div> */}
                             </li>
                         ))
                     }
