@@ -1,0 +1,54 @@
+.list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+}
+
+.listItem {
+    border: 1px solid rgba(0, 0, 0, .1);
+    border-radius: 5px;
+    padding: 16px;
+    list-style: none;
+
+}
+
+.itemName b, .itemLanguage b, .itemDate b {
+    margin-right: 8px;
+}
+
+.itemLink {
+    background-color: var(--corPrincipal);
+    border-radius: 5px;
+    color: var(--corSecundaria);
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    margin: 8px 0;
+    padding: 8px;
+    white-space: nowrap;
+}
+.itemLink:hover {
+    background-color: var(--corPrincipalHover);
+}
+
+.itemDate {
+    font-size: 12px;
+}
+
+
+@media (max-width: 768px) {
+    .list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
+    }
+}
+
+@media (max-width: 550px) {
+    .list {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 16px;
+    }
+}
