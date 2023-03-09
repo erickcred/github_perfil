@@ -11,6 +11,13 @@
     width: 95%;
 }
 
+input {
+    padding: 8px 16px;
+    margin: 16px;
+    font-size: 18px;
+}
+
+
 :root {
     /* --corPrincipal: #f9ca24; */
     /* --corPrincipalHover: rgba(249, 202, 36, 0.85); */
